@@ -91,12 +91,19 @@ function remove(els, evList, cb, options) {
   return els
 }
 
-function fromDOM(el, name, options) {
+/**
+ * Create an erre stream from DOM events
+ * @param   {HTMLElement|NodeList|Array} els - DOM node/s where the listeners will be bound
+ * @param   {String} eventsList  - list of events we want to stream space separated
+ * @param   {Object} options - event options (capture, once and passive)
+ * @returns {Generator} - [erre stream generator](https://github.com/GianlucaGuarini/erre#stream)
+ */
+function fromDOM(els, eventsList, options) {
   const stream = erre();
   const onValue = e => stream.push(e);
 
-  add(el, name, onValue, options);
-  stream.on.end(() => remove(el, name, onValue, options));
+  add(els, eventsList, onValue, options);
+  stream.on.end(() => remove(els, eventsList, onValue, options));
 
   return stream
 }

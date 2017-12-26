@@ -2,7 +2,7 @@
   "name": "erre.fromDOM",
   "version": "1.0.0",
   "description": "erre plugin to stream DOM events",
-  "main": "erre.fromDOM.js",
+  "main": "erre.fromdom.js",
   "jsnext:main": "index.next.js",
   "module": "index.next.js",
   "scripts": {

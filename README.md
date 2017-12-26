@@ -13,13 +13,13 @@
 ## Installation
 
 ```sh
-npm i erre.fromDOM -S
+npm i erre.fromdom -S
 ```
 
 ## Usage
 
 ```js
-import fromDOM from 'erre.fromDOM'
+import fromDOM from 'erre.fromdom'
 import erre from 'erre'
 
 erre.install('fromDOM', fromDOM)
@@ -35,9 +35,9 @@ resizes.on.value(e => console.log(e))
 [travis-url]: https://travis-ci.org/GianlucaGuarini/erre.fromDOM
 [license-image]: http://img.shields.io/badge/license-MIT-000000.svg?style=flat-square
 [license-url]: LICENSE
-[npm-version-image]: http://img.shields.io/npm/v/erre.fromDOM.svg?style=flat-square
-[npm-downloads-image]: http://img.shields.io/npm/dm/erre.fromDOM.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/erre.fromDOM
+[npm-version-image]: http://img.shields.io/npm/v/erre.fromdom.svg?style=flat-square
+[npm-downloads-image]: http://img.shields.io/npm/dm/erre.fromdom.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/erre.fromdom
 
 ## API
 
