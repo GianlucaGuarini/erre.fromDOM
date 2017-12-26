@@ -2,7 +2,7 @@ import resolve from 'rollup-plugin-node-resolve'
 
 export default {
   input: 'index.next.js',
-  name: 'merge',
+  name: 'fromDOM',
   external: ['erre'],
   globals: {
     erre: 'erre'

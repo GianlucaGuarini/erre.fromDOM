@@ -1,7 +1,7 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('erre')) :
 	typeof define === 'function' && define.amd ? define(['erre'], factory) :
-	(global.merge = factory(global.erre));
+	(global.fromDOM = factory(global.erre));
 }(this, (function (erre) { 'use strict';
 
 erre = erre && erre.hasOwnProperty('default') ? erre['default'] : erre;
