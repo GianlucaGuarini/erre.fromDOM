@@ -1,12 +1,11 @@
 require('jsdom-global')()
-const assert = require('assert')
 const fromDOM = require('./')
 const erre = require('erre')
 
 erre.install('fromDOM', fromDOM)
 
 function fireEvent(target, name) {
-  var event = new Event(name)
+  const event = new Event(name)
   target.dispatchEvent(event)
 }
 

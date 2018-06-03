@@ -4,7 +4,7 @@ import erre from 'erre'
 /**
  * Create an erre stream from DOM events
  * @param   {HTMLElement|NodeList|Array} els - DOM node/s where the listeners will be bound
- * @param   {String} eventsList  - list of events we want to stream space separated
+ * @param   {string} eventsList  - list of events we want to stream space separated
  * @param   {Object} options - event options (capture, once and passive)
  * @returns {Generator} - [erre stream generator](https://github.com/GianlucaGuarini/erre#stream)
  */
