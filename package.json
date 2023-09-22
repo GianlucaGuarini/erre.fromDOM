@@ -2,17 +2,24 @@
   "name": "erre.fromdom",
   "version": "1.0.2",
   "description": "erre plugin to stream DOM events",
-  "main": "erre.fromDOM.js",
-  "jsnext:main": "index.next.js",
-  "module": "index.next.js",
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./index.js",
+    "require": "./index.cjs"
+  },
   "scripts": {
-    "prepare": "npm run build && npm test",
+    "prepublishOnly": "npm run build && npm test",
     "lint": "eslint index.next.js test.js rollup.config.js",
     "build": "rollup -c",
     "doc": "documentation readme index.next.js -s API",
     "test": "npm run lint && mocha test.js"
   },
   "files": [
+    "index.js",
+    "index.cjs",
     "index.next.js"
   ],
   "repository": {
@@ -30,18 +37,18 @@
   },
   "homepage": "https://github.com/GianlucaGuarini/erre.fromDOM#readme",
   "peerDependencies": {
-    "erre": "^2.0.0"
+    "erre": "^2.0.0 || ^3.0.0"
   },
   "devDependencies": {
     "@gianlucaguarini/eslint-config": "^2.0.0",
-    "eslint": "^4.19.1",
-    "jsdom": "^11.11.0",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "eslint": "^8.50.0",
+    "jsdom": "^22.1.0",
     "jsdom-global": "^3.0.2",
-    "mocha": "^5.2.0",
-    "rollup": "^0.59.4",
-    "rollup-plugin-node-resolve": "^3.3.0"
+    "mocha": "^10.2.0",
+    "rollup": "^3.29.2"
   },
   "dependencies": {
-    "bianco.events": "0.0.6"
+    "bianco.events": "1.1.1"
   }
 }

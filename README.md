@@ -1,10 +1,10 @@
-<img alt="erre.js" src="https://cdn.rawgit.com/GianlucaGuarini/erre/master/erre-logo.svg" width="50%"/>
+<img alt="erre.js" src="https://cdn.rawgit.com/GianlucaGuarini/erre/main/erre-logo.svg" width="50%"/>
 
 # erre.fromDOM
 
 [erre](https://github.com/GianlucaGuarini/erre) erre plugin to stream DOM events
 
-[![Build Status][travis-image]][travis-url]
+[![Build Status][ci-image]][ci-url]
 
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
@@ -31,8 +31,8 @@ clicks.on.value(e => console.log(e))
 resizes.on.value(e => console.log(e))
 ```
 
-[travis-image]: https://img.shields.io/travis/GianlucaGuarini/erre.fromDOM.svg?style=flat-square
-[travis-url]: https://travis-ci.org/GianlucaGuarini/erre.fromDOM
+[ci-image]: https://img.shields.io/github/actions/workflow/status/gianlucaguarini/erre.fromDOM/test.yml?style=flat-square
+[ci-url]: https://github.com/gianlucaguarini/erre.fromDOM/actions
 [license-image]: http://img.shields.io/badge/license-MIT-000000.svg?style=flat-square
 [license-url]: LICENSE
 [npm-version-image]: http://img.shields.io/npm/v/erre.fromdom.svg?style=flat-square

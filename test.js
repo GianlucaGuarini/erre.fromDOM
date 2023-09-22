@@ -1,8 +1,9 @@
-require('jsdom-global')()
-const fromDOM = require('./')
-const erre = require('erre')
+import erre from 'erre'
+import fromDOM from './index.next.js'
+import jsdomGlobal from 'jsdom-global'
 
 erre.install('fromDOM', fromDOM)
+jsdomGlobal()
 
 function fireEvent(target, name) {
   const event = new Event(name)

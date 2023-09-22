@@ -1,21 +1,27 @@
-import resolve from 'rollup-plugin-node-resolve'
+import { nodeResolve } from '@rollup/plugin-node-resolve'
+
+const globals = {
+  erre: 'erre'
+}
 
 export default {
   input: 'index.next.js',
   external: ['erre'],
-  globals: {
-    erre: 'erre'
-  },
   plugins: [
-    resolve({
-      jsnext: true
-    })
+    nodeResolve()
   ],
   output: [
     {
       name: 'fromDOM',
-      file: 'erre.fromDOM.js',
-      format: 'umd'
+      file: 'index.cjs',
+      format: 'umd',
+      globals
+    },
+    {
+      name: 'fromDOM',
+      file: 'index.js',
+      format: 'es',
+      globals
     }
   ]
 }

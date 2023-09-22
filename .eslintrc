@@ -1,6 +1,4 @@
 extends: "@gianlucaguarini/eslint-config"
-env:
-  mocha: true
 
 rules:
-  fp/no-mutating-methods: false
+  fp/no-mutating-methods: 0
