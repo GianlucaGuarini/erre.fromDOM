@@ -1,6 +1,6 @@
 {
   "name": "erre.fromdom",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "erre plugin to stream DOM events",
   "type": "module",
   "main": "index.js",
